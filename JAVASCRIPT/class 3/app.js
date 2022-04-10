@@ -27,6 +27,6 @@ console.log(students);
 
 for(var i=0 ; i <= 7; i++ ){
     if(students[i]==="ahmer"){
-        console.log("welcome to ",students[i])
+        console.log("welcome to " , students[i])
     }
 }
