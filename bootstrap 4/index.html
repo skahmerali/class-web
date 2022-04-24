@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Carousel Template · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<!-- <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Carousel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="data:image/jpeg;base64,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"  preserveAspectRatio="xMidYMid slice"  />
+        <title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+        <h2>Product 1</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Heading</h2>
+        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+        <h2>Heading</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
