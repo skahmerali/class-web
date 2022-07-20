@@ -15,12 +15,14 @@
 // for (var i = 1 ; i<=10; i++){
 // document.write(table + "*" + i + "=" + table*i +"<br />")
 // }
+var column = Number(prompt("how many columns do u need for ur star pattern "))
 var stars = "*"
-for(var i = 1; i <= 10; i++){
-    for(var j = 1; j <= i ; j++){
-       document.write( "*"+"<br />");
+for (var i = 1; i <= column; i++) {
+    document.write("<br />")
+    for (var j = 1; j <= i; j++) {
+        document.write("*");
 
-    //     // document.write(stars.push("*"))
+        //     // document.write(stars.push("*"))
     }
     // console.log("*")
     // document.write(i + "<br />")
