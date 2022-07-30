@@ -21,3 +21,7 @@
 //             alert("Shoot me now!");
 //     }
 // }
+// function pra (){
+//     var htmlinJs = `<a href="JavaScript:void(0)" onClick="alert('Hi');">Click</a>`
+//     document.write(htmlinJs)
+// }
