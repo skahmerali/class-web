@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="userEmail" placeholder="input your email">
+    <input type="text" id="userPas" placeholder="input your password">
+    <button onClick="clickMe()">check</button>
+
+
+
+    <script>
+        var emails = ["sheikhahmerali75@gmail.com", "sheikhahmerali@gmail.com", "ahmerali75@gmail.com", "ahmerali@gmail.com"];
+        var passwords = ["123", "321", "213", "231" ];
+
+
+        function clickMe() {
+
+            var userEmail = document.getElementById("userEmail").value;
+            var userPas = document.getElementById("userPas").value;
+            var isFound = false;
+
+            //     if((userEmail===emails[0] && userPas===passwords[0])){
+
+            //         alert("Congrats! login Succesfully");
+
+
+            //     }else if(userEmail===emails[1] && userPas===passwords[0]){
+            //         alert("Congrats! login Succesfully");
+
+            //     }else if(userEmail===emails[2] && userPas===passwords[0] ){
+            //         alert("Congrats! login Succesfully");
+
+            //     }
+            //     else if(userEmail===emails[3] && userPas===passwords[0]) {
+            //         alert("Congrats! login Succesfully");
+
+
+            //     }else{
+
+            //         alert("sorry! Login Failed");
+            //     }
+
+            for (var i = 0; i < emails.length; i++) {
+                if ((userEmail === emails[i] && userPas === passwords[i])) {
+
+                    alert("Congrats! login Succesfully");
+                    isFound = true;
+                }
+
+
+            }
+            if(isFound===false){
+                alert("sorry u putted wrong password")
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

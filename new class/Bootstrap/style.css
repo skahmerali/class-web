@@ -1,0 +1,18 @@
+.navBar a{
+color: #fff !important;
+}
+img{
+    width: 200px;
+}
+.card{
+    display: inline-block;
+    /* margin:10px; */
+    margin: 20px;
+   
+   
+    
+}
+.row1{
+   
+    text-align: center;
+}
