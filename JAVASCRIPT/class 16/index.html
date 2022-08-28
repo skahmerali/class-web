@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="hey">hey</h1>
+    <!-- https://www.tutorialspoint.com/html5/html5_canvas.htm -->
+    <div>
+        <input type="email" id="Semail">
+        <input type="password" name="" id="Spass">
+        <button onClick="signUp()">Sign up</button>
+    </div>
+    <div>
+        <input type="email" id="Lemail">
+        <input type="password" name="" id="Lpass">
+        <button onClick="login()">Login</button>
+    </div>
+
+
+    <script>
+
+        //  console.log("here is a pI value "+ Math.PI);
+        // console.log(document.body)
+        function signUp() {
+            var Semail = document.getElementById("Semail").value;
+            var Spass = document.getElementById("Spass").value;
+            var users = []
+            users.push(Semail , Spass)
+            console.log(users)
+            window.localStorage.setItem('signUpUsers', JSON.stringify(users))
+
+        }
+
+    </script>
+</body>
+
+</html>

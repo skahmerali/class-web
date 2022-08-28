@@ -18,9 +18,16 @@
 
     <script>
         var emails = ["sheikhahmerali75@gmail.com", "sheikhahmerali@gmail.com", "ahmerali75@gmail.com", "ahmerali@gmail.com"];
-        var passwords = ["123", "321", "213", "231" ];
+        var passwords = ["123", "321", "213", "231"];
+        // var users = [
+        //     {
+        //         email: [],
+        //         passwords: []
+        //     },
+        //     {
 
-
+        //     }
+        // ]
         function clickMe() {
 
             var userEmail = document.getElementById("userEmail").value;
@@ -57,9 +64,7 @@
 
 
             }
-           
-            
-            if(isFound===false){
+            if (isFound === false) {
                 alert("sorry u putted wrong password")
             }
         }

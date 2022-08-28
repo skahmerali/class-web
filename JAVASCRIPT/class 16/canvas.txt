@@ -1,0 +1,30 @@
+console.log(window.innerWidth);
+
+
+const canvas = document.querySelector(`#canvas`);
+canvas.width = window.innerWidth - 60;
+canvas.height = canvas.width / 2.7 //width should be 600;
+
+let context = canvas.getContext("2d");
+let startBgColor = "white"
+context.fillStyle = startBgColor;
+context.fillRect(0, 0, canvas.width, canvas.height);
+
+//below the important for touch function and  start
+canvas.addEventListener("touchstart", start, false);
+canvas.addEventListener("touchmove", draw, false);
+canvas.addEventListener("mousedown", start, false);
+canvas.addEventListener("mousemove", draw, false);
+
+canvas.addEventListener("touchend", stop, false);
+canvas.addEventListener("mouseup", stop, false);
+canvas.addEventListener("mouseout", stop, false);
+
+
+
+
+
+
+
+Links:
+https://www.javascripttutorial.net/web-apis/javascript-fillrect/#:~:text=The%20fillRect()%20is%20a,and%20height%20on%20a%20canvas.&text=In%20this%20syntax%3A,starting%20point%20of%20the%20rectangle.
