@@ -1,0 +1,30 @@
+
+p{ 
+color:rgb(72, 104, 108);
+   
+   background-color: rgb(225, 230, 197);
+   font-family:oswail  ;  
+   font-size: 0.7em;
+   font-style: oblique;
+   text-transform: uppercase;
+   line-height: 1.9em;
+   word-spacing: 1.6em;
+   letter-spacing: 0.2em;
+   text-indent: 12px;
+}
+h1:first-letter{
+    font-size: 100px;
+    /* text-align: right; */
+    background-color: red;
+    background-color: hsl(100%, 50%, 0.1);
+    text-decoration:none ;
+    text-shadow: 2px -3px 10px rgb(81, 80, 80);
+}
+@font-face {
+    font-family:oswail ;
+    src: url(./static/Oswald-ExtraLight.ttf);
+}
+a:link{
+    color: red;
+    text-decoration: none;
+}
