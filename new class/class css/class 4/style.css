@@ -1,0 +1,53 @@
+.main{
+    width: 90%;
+    height:  1000px;
+    background-color: rgb(243, 234, 234);
+    margin: 0% auto;
+}
+.mainBody{
+    width: 40%;
+    height:  500px;
+    background-color: rgb(231, 15, 15);
+    display: inline-block;
+}
+.box{
+    width: 80%;
+    background-color: aquamarine;
+}
+
+.img{
+    width: 200px;
+    
+    /* text-align: center; */
+    /* margin: 0% auto ; */
+}
+.image1{
+    display: inline-block;
+    background-color: yellow;
+    width: 60%;
+    text-align: center;
+    margin: 0% auto;
+}
+
+.header{
+    width: 95%;
+    height:  20px;
+    background-color: rgb(158, 152, 152);
+    /* text-align: center; */
+    margin: 0% auto;
+}
+.sideLeftBar{
+    width: 20%;
+    height:  500px;
+    background-color: rgb(65, 62, 62);
+    display: inline-block;
+    
+}
+.sideRightBar{
+    width: 20%;
+    height:  500px;
+    background-color: rgb(65, 62, 62);
+    display: inline-block;
+    margin: 0% 0% 0% 19%;
+    
+}
