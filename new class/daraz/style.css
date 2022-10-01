@@ -1,0 +1,76 @@
+.main{
+    width: 100%;
+    background-color: rgb(255,255,255);
+}
+.navigation{
+    width: 100%;
+    background-color: rgb(236,236,236);
+}
+ul li{
+    display: inline-block;
+    color: rgb(91,91,91);
+    margin: 10px;
+
+}
+ul li:hover{
+    color: rgb(240,89,36); 
+    cursor: pointer;
+}
+.header{
+
+}
+.img{
+display: inline-block;
+margin: 20px;
+}
+.img img{
+    width: 200px;
+}
+.search{
+    /* width: 50px; */
+    display: inline-block;
+    /* margin: 20px; */
+    /* height: 60px; */
+    
+}
+.search img{
+    width: 20px;
+    background-color: rgb(240,89,36); 
+    height:40px ;
+    /* margin-top: 50px; */
+    /* padding: 1px 2px; */
+    margin-top: 50px;
+}
+.search input{
+    padding: 0px 0px 0px 20px;
+width: 500px;
+height: 50px;
+background-color:  rgb(236,236,236); 
+border: none;
+margin: 0px 0px 10px 10px;
+/* text-align: center;
+align-items: center; */
+/* padding: 13px 19px; */
+background-image: url('./images/search-icon-png-18.png');
+background-size: 40px;
+
+background-repeat: no-repeat;
+padding: 2px 2px 2px 50px;
+
+}
+.trolly{
+    display: inline-block;
+
+}
+.trolly img{
+    width: 30px;
+    margin: 20px;
+}
+.poster{
+    display: inline-block;
+    margin-left:100px ;
+}
+.poster img{
+    width: 200px;
+
+}
