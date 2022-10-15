@@ -1,0 +1,15 @@
+start 1 
+download https://nodejs.org/en/
+(LTS )
+install
+open cmd prompt in root and use the commad node -v
+step 2 
+open command line in server folder 
+npm init ( ask some question you may select your dependencies )
+npm install 
+npm i express 
+
+
+write a server code 
+
+npm start in terminal
