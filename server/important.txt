@@ -13,3 +13,10 @@ npm i express
 write a server code 
 
 npm start in terminal
+
+
+
+https://www.tutorialspoint.com/nodejs/index.htm#
+
+https://mongoosejs.com/docs/5.x/docs/deprecations.html
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status

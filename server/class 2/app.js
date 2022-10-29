@@ -18,14 +18,15 @@ mongoose.connection.on("disconnected", ()=>{
     
 var userSchema = new mongoose.Schema({
     stdName:String,
+    email:String,   
     rollnumber : String,
     phoneNumber:String,
     id:Number,
     data:{type:Date,default:Date.now}
 })
-var userModel = mongoose.model("NewUsers", userSchema)
+var userModelStd = mongoose.model("NewUsers", userSchema)
 
 
 module.exports = {
-userModel    
+    userModelStd    
 }
