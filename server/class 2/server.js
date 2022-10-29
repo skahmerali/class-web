@@ -5,7 +5,7 @@ var color = require("colors")
 // var UserModelStd = require("./app")
 var cors = require("cors")
 var app = express();
-
+var bodyParser = require("body-parser")
 // class 1
 
 
@@ -102,7 +102,7 @@ var mongoose = require("mongoose");
 //     age:8,
 //     phoneNumber:"03456276164"
 // }
-mongoose.connect("mongodb+srv://ahmerali:ahmerali@cluster0.slkv6.mongodb.net/ahmerali",{useNewUrlParser:true})
+mongoose.connect("mongodb+srv://ahmerali:ahmerali@cluster0.slkv6.mongodb.net/ahmerali",{ useNewUrlParser: true, useUnifiedTopology: true })
 
 mongoose.connection.on("connected", ()=>{
 console.log("mongoos is connected")
@@ -136,6 +136,7 @@ app.use(cors({
     origin: '*',
     credentials: true
 }))
+app.use(bodyParser.json())
 app.post('/user', (req, res, next) => {
 
     // if (!req.body.stdName
