@@ -6,7 +6,8 @@ var NewUsers = require("./app")
 var cors = require("cors")
 var app = express();
 var bodyParser = require("body-parser");
-var path= require("path")
+var path= require("path");
+const { Hash } = require("crypto");
 // class 1
 
 
@@ -160,7 +161,7 @@ NewUsers.findOne({email:req.body.email},(err,data)=>{
         console.log(err);
         res.status(403).send("user already created")
     }else{
-        res.status
+        res.status(200)
     }
 })
 
