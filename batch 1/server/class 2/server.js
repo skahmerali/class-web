@@ -7,7 +7,9 @@ var cors = require("cors")
 var app = express();
 var bodyParser = require("body-parser");
 var path= require("path");
-const { Hash } = require("crypto");
+var route = express.Router()
+
+// const { Hash } = require("crypto");
 // class 1
 
 
@@ -133,73 +135,141 @@ const port = process.env.PORT || 3000 ;
 
 
 
+// class 18-11-2022
+// app.use(cors({
+//     origin: '*',
+//     credentials: true
+// }));
+// app.use(bodyParser.json());
+// // app.use("/", express.static(path.resolve(path.join(__dirname, "public"))));
+// app.use("/",express.static(path.resolve(path.join(__dirname,"public"))));
 
-app.use(cors({
-    origin: '*',
-    credentials: true
-}));
-app.use(bodyParser.json());
-// app.use("/", express.static(path.resolve(path.join(__dirname, "public"))));
-app.use("/",express.static(path.resolve(path.join(__dirname,"public"))));
 
+// app.post('/signup', (req, res, next) => {
 
-app.post('/signup', (req, res, next) => {
+//     if (!req.body.stdName
+//         || !req.body.email
+//         || !req.body.rollNumber
+//         || !req.body.phoneNumber
+//         || !req.body.id) {
+//         res.status(405).send({
+//             message:"please send valid data"
+//         });
+//         return
+//     };
 
-    if (!req.body.stdName
-        || !req.body.email
-        || !req.body.rollNumber
-        || !req.body.phoneNumber
-        || !req.body.id) {
-        res.status(405).send({
-            message:"please send valid data"
-        });
-        return
-    };
+// NewUsers.findOne({email:req.body.email},(err,data)=>{
+//     if(err){
+//         console.log(err);
+//         res.status(403).send("user already created")
+//     }else{
+//         res.status(200)
+//     }
+// })
 
-NewUsers.findOne({email:req.body.email},(err,data)=>{
-    if(err){
-        console.log(err);
-        res.status(403).send("user already created")
-    }else{
-        res.status(200)
-    }
-})
-
-    var newPerson = new NewUsers({
-        "stdName": req.body.stdName,
-        "email": req.body.email,
-        "rollNumber": req.body.rollNumber,
-        "phoneNumber": req.body.phoneNumber,
-        "id": req.body.id,
-    });
-// JSON.parse(newPerson)
-    newPerson.save((err, data) => {
-        if (!err) {
-            console.log(data)
-            res.status(200).send({
-                message: "User created",
+//     var newPerson = new NewUsers({
+//         "stdName": req.body.stdName,
+//         "email": req.body.email,
+//         "rollNumber": req.body.rollNumber,
+//         "phoneNumber": req.body.phoneNumber,
+//         "id": req.body.id,
+//     });
+// // JSON.parse(newPerson)
+//     newPerson.save((err, data) => {
+//         if (!err) {
+//             console.log(data)
+//             res.status(200).send({
+//                 message: "User created",
                 
 
-            })
-            console.log("user created")
-        } else {
-            console.log("==>>", err)
-            res.status(405).send({
-                message: "user creation faild"
-            })
-        };
+//             })
+//             console.log("user created")
+//         } else {
+//             console.log("==>>", err)
+//             res.status(405).send({
+//                 message: "user creation faild"
+//             })
+//         };
 
-    })
-});
+//     })
+// });
 
-app.post("/login",(req,res)=>{
-var email=req.body.email;
-var password=req.body.password;
-console.log("email",email)
-console.log("password" , password)
-})
+// app.post("/login",(req,res)=>{
+// var email=req.body.email;
+// var password=req.body.password;
+// console.log("email",email)
+// console.log("password" , password)
+// })
 
 
-app.listen(port, () => {
-    console.log("server is running on", port)
-})
+// app.listen(port, () => {
+//     console.log("server is running on", port)
+// })
+
+// const middleWare = (req, res , next) =>{
+//     if(req.query.userType){
+//         res.send("hello new user")
+//     }else{
+//         next()
+//     }
+// }
+// app.use(middleWare)
+
+
+
+
+// saturday clas 26/11/22
+
+// const mW = (req, resp, next) => {
+//     if (!req.query.role) {
+//         resp.send("Please provide your role")
+//     }
+//     else if (req.query.role=="admin") {
+//         resp.send("You are admin")
+//     }
+//     else if (req.query.role=="user") {
+//         resp.send("You are user")
+//     }
+//     else if (req.query.role=== " ") {
+//         resp.send("please provide existing role")
+//     }
+//     else {
+//         next();
+//     }
+// }
+// // app.use(mW); 
+// route.use(mW);
+
+// route.get("/",  (req,res,next)=>{
+    
+
+
+//     res.send("Hello home page !")
+// })
+// route.get("/user",(req,res,next)=>{
+    
+//     res.send("Hello user page")
+// })
+// app.get("/about",(req,res,next)=>{
+    
+//     res.send("Hello about page")
+// })
+
+
+
+
+
+// app.use('/',route);
+
+
+
+
+// app.listen(port, () => {
+//     console.log("server is running on", port)
+// })
+
+
+
+
+// JavaScript Promises – The promise.then, promise.catch and promise.finally Methods Explained
+// A promise is an object in JavaScript that will produce a value sometime in the future. This usually applies to asynchronous operations.

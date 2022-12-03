@@ -8,6 +8,7 @@ function singup(){
     Http.open("POST", url + "/signup");
     Http.setRequestHeader("Content-Type", "application/json");
     Http.send(JSON.stringify(obj));
+    // Http.send(null)
     Http.onreadystatechange = (e) => {
         if (Http.readyState === 4) {
 
