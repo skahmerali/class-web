@@ -8,7 +8,7 @@ var app = express();
 var bodyParser = require("body-parser");
 var path= require("path");
 var route = express.Router()
-
+const mW = require("./Mw.js")
 // const { Hash } = require("crypto");
 // class 1
 
@@ -220,23 +220,7 @@ const port = process.env.PORT || 3000 ;
 
 // saturday clas 26/11/22
 
-// const mW = (req, resp, next) => {
-//     if (!req.query.role) {
-//         resp.send("Please provide your role")
-//     }
-//     else if (req.query.role=="admin") {
-//         resp.send("You are admin")
-//     }
-//     else if (req.query.role=="user") {
-//         resp.send("You are user")
-//     }
-//     else if (req.query.role=== " ") {
-//         resp.send("please provide existing role")
-//     }
-//     else {
-//         next();
-//     }
-// }
+
 // // app.use(mW); 
 // route.use(mW);
 
@@ -264,9 +248,13 @@ const port = process.env.PORT || 3000 ;
 
 
 
-// app.listen(port, () => {
-//     console.log("server is running on", port)
-// })
+
+app.delete()
+
+
+app.listen(port, () => {
+    console.log("server is running on", port)
+})
 
 
 

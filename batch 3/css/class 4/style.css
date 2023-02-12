@@ -1,0 +1,44 @@
+/* .first-h1{
+    color:rgb(255, 255, 255);
+    width: 400px;
+    background-color: rgb(106, 214, 34);
+} */
+.grey{
+    width: 50%;
+    height: 300px;
+    background-color: gray;
+
+  
+}
+.main{
+width: 50%;
+margin: 0% auto;
+
+
+}
+
+
+.pink{
+    width: 300px;
+    height: 30px;
+    background-color: rgba(217, 39, 69, 0.607);
+    color: white;
+    margin-left: 2px;
+    border: 2px solid yellow;
+    text-align: center;
+    
+}
+.white{
+    width: 300px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 2px;
+}
+.darkCyan{
+    width: 300px;
+    height: 30px;
+    background-color: darkcyan;
+    color: white;  margin-top: 20px;
+    margin-left: 2px;
+  
+}

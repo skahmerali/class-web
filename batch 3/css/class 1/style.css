@@ -1,0 +1,221 @@
+.main{
+    width: 100%;
+}
+.left{
+    width:50%;
+    display: inline-block;
+    background-color: yellow;
+    float: left;
+}
+.right{
+    width:50%;
+    display: inline-block;
+    background-color: rgb(205, 205, 194);
+    float: right;
+}
+
+
+/* @media (max-width:480px) and (min-width:320px) {
+  .main{
+    width: 490px;
+
+}
+.img-nav-beg{
+width: 40px;
+}
+    .navigation {
+        width: 480px;
+        background-color: rgb(226,27,112);
+        color: white;
+        text-align: center;
+    }
+    .context-nav p{
+        width: 480px;
+        margin: 0% auto;
+    }
+    .text-nav{
+        font-size: 1.9rem;
+    }
+    .signup-now{
+        height: 48px;
+        text-align: center;
+        border: 1px solid white;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+
+    }
+    .signup-now:hover {
+        background-color: white;
+        color: rgb(226,27,112);
+        cursor: pointer;
+    }
+
+
+}
+
+@media (max-width:768px) and (min-width:481px) {
+   .main{
+    width: 99%;
+
+}
+.img-nav-beg{
+width: 40px;
+}
+    .navigation {
+        width: 100%;
+        background-color: rgb(226,27,112);
+        color: white;
+        text-align: center;
+    }
+    .context-nav p{
+        width: 481px;
+        margin: 0% auto;
+    }
+    .text-nav{
+        font-size: 1.9rem;
+    }
+    .signup-now{
+        height: 48px;
+        text-align: center;
+        border: 1px solid white;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+
+    }
+    .signup-now:hover {
+        background-color: white;
+        color: rgb(226,27,112);
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px) {
+   .main{
+    width: 99%;
+
+}
+.img-nav-beg{
+width: 40px;
+}
+    .navigation {
+        width: 100%;
+        background-color: rgb(226,27,112);
+        color: white;
+        text-align: center;
+    }
+    .context-nav p{
+        width: 800px;
+        margin: 0% auto;
+    }
+    .text-nav{
+        font-size: 1.9rem;
+    }
+    .signup-now{
+        height: 48px;
+        text-align: center;
+        border: 1px solid white;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+
+    }
+    .signup-now:hover {
+        background-color: white;
+        color: rgb(226,27,112);
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1200px) and (min-width:1025px) {
+   .main{
+    width: 99%;
+
+}
+.img-nav-beg{
+width: 40px;
+}
+    .navigation {
+        width: 100%;
+        background-color: rgb(226,27,112);
+        color: white;
+        text-align: center;
+    }
+    .context-nav p{
+        width: 800px;
+        margin: 0% auto;
+    }
+    .text-nav{
+        font-size: 1.9rem;
+    }
+    .signup-now{
+        height: 48px;
+        text-align: center;
+        border: 1px solid white;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+
+    }
+    .signup-now:hover {
+        background-color: white;
+        color: rgb(226,27,112);
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1201px) {
+
+    .main {
+        width: 99%;
+
+    }
+
+    .img-nav-beg {
+        width: 40px;
+    }
+
+    .navigation {
+        width: 100%;
+        background-color: rgb(226, 27, 112);
+        color: white;
+        text-align: center;
+    }
+
+    .context-nav p {
+        width: 800px;
+        margin: 0% auto;
+    }
+
+    .text-nav {
+        font-size: 1.9rem;
+    }
+
+    .signup-now {
+        height: 48px;
+        text-align: center;
+        border: 1px solid white;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 10px;
+        margin: 5px;
+        color: white;
+
+    }
+
+    .signup-now:hover {
+        background-color: white;
+        color: rgb(226, 27, 112);
+        cursor: pointer;
+    }
+    
+} */

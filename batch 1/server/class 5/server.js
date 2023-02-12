@@ -14,18 +14,20 @@ app.use(cors({
     origin: '*',
     credentials: true
 }));
-function abc() {
-    axios.post(
-        {
-            method: 'post',
-            url: '/user/12345',
-            data: {...data}
-        }
-    )
-        .then(() => {
+// function abc() {
+//     axios.post(
+//         {
+//             method: 'post',
+//             url: '/user/12345',
+//             data: data
+//         }
+//     )
+//         .then(() => {
 
-        })
-        .catch(() => {
+//         })
+//         .catch(() => {
 
-        })
-}
+//         })
+// }
+
+ 

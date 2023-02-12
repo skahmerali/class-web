@@ -1,0 +1,51 @@
+*{
+    margin: 2px;
+}
+body{
+    width: 98%;
+    height: 1000px;
+    background-color: rgb(76, 62, 76);
+}
+.main{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(116, 77, 77);
+    margin: 0% auto;
+}
+.header{
+    width: 90%;
+    height: 100px;
+    background-color: rgb(53, 144, 144);
+    margin: 0% auto;
+
+}
+.navbar ul{
+    display: block;
+    margin: 2% auto;
+    text-align: center;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a {
+    background-color: #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+.navbar ul li a:hover {
+    background-color: #aaa;;
+}
+
+
+.screen{
+    width: 70%;
+    height: 400px;
+    background-color: rgb(53, 61, 144);
+    margin: 0% auto;
+}
+.product{
+    width: 90%;
+    height: 300px;
+    background-color: rgb(149, 60, 176);
+    margin: 0% auto;
+}

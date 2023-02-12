@@ -1,0 +1,34 @@
+@media screen and (min-width: 200px ){
+    
+    body{
+        color:rgb(9, 9, 87) ;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace sans-serif serif;
+        font-style: italic;
+    }
+}
+@media screen and (max-width: 480px  ){
+    
+    body{
+        color:rgb(9, 9, 87) ;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: monospace sans-serif serif;
+        font-style: italic;
+        background-color: yellow;
+    }
+}
+/* body{
+   
+    width: 100%;
+    height: 1000px;
+    background-color: yellow;
+}
+form{
+    width: 50%;
+    max-width:993 ;
+    min-height: 827px;
+    /* height: 50%; */
+    /* background-color: rgb(219, 207, 207);
+} */ 

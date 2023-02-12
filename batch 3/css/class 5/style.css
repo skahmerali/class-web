@@ -1,0 +1,12 @@
+/* @font-face {
+    font-family: 'Babylonica', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Babylonica&family=Roboto:ital,wght@1,100&display=swap');
+} */
+p{
+    font-family:'Babylonica', cursive;
+    text-transform: capitalize;
+}
+.underline{
+    /* text-decoration: none; */
+    text-decoration: overline;
+}
