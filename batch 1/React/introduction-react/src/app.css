@@ -1,0 +1,14 @@
+html, body, #root, .room {
+    height: 100%;
+    margin: 0;
+  }
+  .lit {
+    height: 1000px;
+    background-color: white;
+    color: black;
+  }
+  .dark {
+    height: 1000px;
+    background-color: rgb(41,41,41);
+    color: white;
+  }

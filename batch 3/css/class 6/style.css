@@ -1,0 +1,25 @@
+body{
+    width: 100%;
+}
+h1:first-letter{
+    width: 10%;
+    /* text-align: justify; */
+    text-shadow: 10px 2px 2px #bd1111;
+}
+.img{
+    background-image: url("https://images.unsplash.com/photo-1495506539593-87a23e41b6fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwYmFja2xpZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+background-repeat: no-repeat;
+width: 40%;
+height: 400px;
+text-indent: -9999px;
+
+}
+p{
+    text-indent: 100px ;
+    color: white;
+   
+}
+img:hover{
+    color: rgb(143, 0, 24);
+    font-size: 200px;
+}
